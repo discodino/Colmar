@@ -1,0 +1,203 @@
+html {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  color: black;
+}
+
+/* header */
+#header {
+  display: flex;
+  justify-content: space-between;
+  height: 4rem;
+}
+
+#header img {
+  padding-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+#header h2 {
+  float: right;
+  padding-top: 1.5rem;
+}
+
+#header h2 em {
+  font-weight: bold;
+}
+
+#headernav {
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+}
+
+#headernav li {
+  display: inline;
+  padding-right: 1rem;
+}
+
+/*jumbotron*/
+#jumbotron {
+  background-color: lightgrey;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 100%;
+}
+
+#jumbobox1 {
+  box-sizing: border-box;
+  max-width: 60%;
+  padding: 2rem 2.5rem 2rem 1.5rem;
+}
+
+#bannerimg {
+  width: 100%;
+}
+
+#jumbotronbtn {
+  width: 50%;
+  background-color: darkgrey;
+  color: black;
+  text-align: center;
+  display: block;
+  line-height: 2rem;
+}
+
+
+.jumbotronbox h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.jumbotronbox h3 {
+  font-size: 1.5rem;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+/*more info*/
+#moreinfobox {
+  display: flex;
+  max-width: 100%;
+}
+
+#moreinfocolumnleft {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+}
+
+#moreinfocolumnleft img {
+  max-width: 90%;
+  margin: 2rem 1.5rem 2rem 1.5rem;
+}
+
+.leftbox h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+}
+
+.leftbox p {
+  margin-left: 1.5rem;
+}
+
+.leftbox h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+  font-weight: bold;
+}
+
+
+#moreinfocolumnright {
+  display: flex;
+  flex-direction: column;
+  max-width: 26.44rem;
+  padding-top: 1rem;
+}
+
+.rightbox {
+  display: flex;
+  align-items: center;
+}
+
+.imgdiv {
+  max-width: 35%;
+  height: auto;
+  margin: 1rem;
+}
+
+.rightbox img {
+  max-width: 100%;
+}
+
+.rightboxwords p {
+  margin-bottom: 1rem;
+  line-height: 1.2rem;
+}
+
+.infotitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.rightboxwords a {
+  text-decoration: none;
+}
+
+/*Start Learning*/
+
+#startlearning {
+  background-color: lightgrey;
+}
+
+#learningoptionsbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 2rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+#learningtitle {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.boxtile {
+  max-width: 30%;
+  margin: 1rem;
+}
+
+.tilepic img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.tiletext {
+  background-color: white;
+  height: 10rem;
+}
+
+.tiletext h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 1rem 0rem 0.5rem 1rem;
+}
+
+.tiletext h3 {
+  padding: 0.5rem 0rem 0.5rem 1rem;
+}
+
+.tiletext h4 {
+  padding: 0.5rem 0rem 2rem 1rem;
+  line-height: 1.3rem;
+}
