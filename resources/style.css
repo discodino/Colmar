@@ -5,23 +5,23 @@ html {
 }
 
 /* header */
-#header {
+header {
   display: flex;
   justify-content: space-between;
   height: 4rem;
 }
 
-#header img {
+header img {
   padding-top: 1rem;
   padding-left: 1.5rem;
 }
 
-#header h2 {
+header h2 {
   float: right;
   padding-top: 1.5rem;
 }
 
-#header h2 em {
+header h2 em {
   font-weight: bold;
 }
 
@@ -33,6 +33,31 @@ html {
 #headernav li {
   display: inline;
   padding-right: 1rem;
+}
+
+#mobileheadernav {
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+}
+
+#mobileheadernav i {
+  display: inline;
+  padding-right: 1rem;
+}
+
+@media only screen and (max-width: 765px) {
+  .hidemobile {
+    display: none;
+  }
+  header {
+    height: 4rem;
+  }
+}
+
+@media only screen and (min-width: 766px) {
+  #mobileheadernav {
+    display: none;
+  }
 }
 
 /*jumbotron*/
@@ -77,6 +102,28 @@ html {
   margin-bottom: 1.5rem;
 }
 
+@media only screen and (max-width: 765px) {
+  #jumbobox1 {
+    display: none;
+  }
+  #jumbobox2 h1 {
+    margin: 2rem 0rem 2rem 1rem;
+  }
+  #jumbobox2 h3 {
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+  }
+  #jumbobox2 p {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (min-width: 766px) {
+  #mobilejumbo {
+    display: none;
+  }
+}
 /*more info*/
 #moreinfobox {
   display: flex;
@@ -149,6 +196,33 @@ html {
   text-decoration: none;
 }
 
+@media only screen and (max-width:765px) {
+  #moreinfocolumnleft {
+    display: none;
+  }
+  #moreinfocolumnright {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .rightbox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .imgdiv {
+    width: 100%;
+    margin: 1rem;
+  }
+  .imgdiv img {
+    max-width: 100%;
+  }
+  .rightboxwords {
+    width: 100%;
+    margin-left: 1rem;
+  }
+}
+
 /*Start Learning*/
 
 #startlearning {
@@ -200,4 +274,150 @@ html {
 .tiletext h4 {
   padding: 0.5rem 0rem 2rem 1rem;
   line-height: 1.3rem;
+}
+
+@media only screen and (max-width:765px) {
+  .tilepic {
+    display: none;
+  }
+  .tiletext {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .tiletext h3 {
+    display: none;
+  }
+  .tiletext h4 {
+    display: none;
+  }
+  .tiletext h2 {
+    background-color: darkgrey;
+    padding: 1rem;
+    margin: 0.5rem 1rem;
+    width: 100%-1rem;
+    box-sizing: border-box;
+  }
+  #learningoptionsbox {
+    display: block;
+    padding: 0rem;
+  }
+  .boxtile {
+    max-width: 100%;
+  }
+  #lasttiletext {
+    margin-bottom: 2rem;
+  }
+}
+/*thesis exhibit*/
+#exhibittitle {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+#thesisbox {
+  display: flex;
+  border-bottom: 1px solid grey;
+}
+
+#thesisboxleft {
+  max-width: 60%;
+  max-height: auto;
+}
+
+.boxleftchild {
+  max-width: 100%;
+}
+.boxleftchild video {
+  max-width: 95%;
+  max-height: auto;
+  margin-left: 1.5rem;
+  margin-right: 1rem;
+}
+
+.boxleftchild h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1.5rem 0rem 1.5rem 1.5rem;
+}
+
+.boxleftchild h2 {
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+  line-height: 1.2rem;
+}
+
+#thesisboxright {
+  display: flex;
+  flex-direction: column;
+}
+
+.boxrightchild {
+  display: flex;
+  align-items: center;
+  max-width: 26.44rem;
+  max-height: 10.5rem;
+}
+
+.thesispic {
+  max-width: 35%;
+  height: auto;
+  margin: 1rem;
+}
+
+.thesispic img {
+  max-width: 100%;
+}
+
+.thesistext h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.thesistext h2 {
+  margin-bottom: 1rem;
+  line-height: 1.2rem;
+}
+
+@media only screen and (max-width:765px) {
+  #boxleftchildwords {
+    display: none;
+  }
+  #thesisboxright {
+    display: none;
+  }
+  #thesisboxleft {
+    max-width: 100%;
+  }
+  video {
+    width: 100%;
+  }
+  .boxleftchild video {
+    margin: 0rem;
+    max-width: 100%;
+  }
+}
+/*footer*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1.5rem 1rem 1.5rem;
+}
+
+#secondfooterflex {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width:765px) {
+  #secondfooterflex {
+    display: none;
+  }
+  footer {
+    margin: 2rem 0rem 1rem 1rem;
+  }
 }

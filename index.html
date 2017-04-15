@@ -4,27 +4,35 @@
     <meta charset="utf-8">
     <title>Colmar Academy</title>
     <link href="resources/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     <link href="resources/style.css" rel="stylesheet" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,700" rel="stylesheet"/>
   </head>
   <body>
 <!--header-->
-  <div id="header">
+  <header>
     <div class="headerbox">
       <img src="resources/capstone_colmar_assets/images/ic-logo.svg"/>
-      <h2><em>COLMAR</em>ACADEMY</h2>
+      <h2 class="hidemobile"><em>COLMAR</em>ACADEMY</h2>
     </div>
     <div class="headerbox">
-      <ul id="headernav">
+      <ul id="headernav" class="hidemobile">
         <li>On campus</li>
         <li>Online</li>
         <li>For companies</li>
         <li>Sign in</li>
       </ul>
+      <ul id="mobileheadernav">
+        <i class="fa fa-institution"></i>
+        <i class="fa fa-desktop"></i>
+        <i class="fa fa-user"></i>
+      </ul>
     </div>
-  </div>
+  </header>
 
 <!--jumbotron-->
+  <div id="mobilejump">
+  </div>
   <div id="jumbotron">
     <div class="jumbotronbox" id="jumbobox1">
       <img id="bannerimg"
@@ -148,7 +156,7 @@
           <img src="resources/capstone_colmar_assets/images/course-marketing.jpg"/>
         </div>
         <div class="tiletext">
-          <h2>Marketing</h2>
+          <h2 id="lasttiletext">Marketing</h2>
           <h3>COURSES</h3>
           <h4>Analytics, Content Marketing, Mobile Marketing</h4>
         </div>
@@ -159,10 +167,62 @@
 
 
 <!--thesis exhibit-->
+  <div id="thesisexhibit">
+    <div>
+      <p id="exhibittitle">Thesis Exhibit</p>
+    </div>
+    <div id="thesisbox">
+      <div id="thesisboxleft">
+        <div class="boxleftchild">
+          <video controls>
+            <source src="resources/capstone_colmar_assets/videos/thesis.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="boxleftchild" id="boxleftchildwords">
+          <h1>Reimagine urban</h1>
+          <h2>"Curabitur vitae libero in ipsum portitor consequat. Aliquam et commodo lectus, nec
+            consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget
+            magna laoreet, efficitur dolor consequat, tristique ligual."</h2>
+        </div>
+      </div>
+      <div id="thesisboxright">
+        <div class="boxrightchild">
+          <div class="thesispic">
+            <img src="resources/capstone_colmar_assets/images/thesis-fisma.jpg"/>
+          </div>
+          <div class="thesistext">
+            <h1>Fisma: Design and</h1>
+            <h2>Designer showcase of new prototype product</h2>
+          </div>
+        </div>
+        <div class="boxrightchild">
+          <div class="thesispic">
+            <img src="resources/capstone_colmar_assets/images/thesis-now-and-then.jpg"/>
+          </div>
+          <div class="thesistext">
+            <h1>Now and then</h1>
+            <h2>Research study about New York</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 <!--footer-->
-
+  <footer>
+    <div class="footerbox">
+      <p>&copy 2016 Colmar Academy. All rights reserved</p>
+    </div>
+    <div class="footerbox" id="secondfooterflex">
+      <div class="navbox">
+        <p>Terms</p>
+      </div>
+      <div class="navbox">
+        <p>Privacy</p>
+      </div>
+    </div>
+  </footer>
 
 
   </body>
