@@ -211,7 +211,7 @@ header h2 em {
     width: 100%;
   }
   .imgdiv {
-    width: 100%;
+    max-width: 100%;
     margin: 1rem;
   }
   .imgdiv img {
@@ -220,6 +220,12 @@ header h2 em {
   .rightboxwords {
     width: 100%;
     margin-left: 1rem;
+  }
+  .nonmobilepic {
+    display: none;
+  }
+  .mobilepic {
+    width: 100%;
   }
 }
 
