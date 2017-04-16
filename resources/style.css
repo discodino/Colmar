@@ -1,6 +1,6 @@
 html {
   font-size: 16px;
-  font-family: "Raleway", sans-serif;
+  font-family: "News Cycle", sans-serif;
   color: black;
 }
 
@@ -9,11 +9,15 @@ header {
   display: flex;
   justify-content: space-between;
   height: 4rem;
+  background-color: #001a00;
+  color: white;
 }
 
 header img {
   padding-top: 1rem;
   padding-left: 1.5rem;
+  color: white;
+  filter: invert(100%);
 }
 
 header h2 {
@@ -35,6 +39,10 @@ header h2 em {
   padding-right: 1rem;
 }
 
+#headernav li:hover {
+  color: darkgrey;
+}
+
 #mobileheadernav {
   margin-top: 1.5rem;
   margin-right: 1rem;
@@ -43,6 +51,7 @@ header h2 em {
 #mobileheadernav i {
   display: inline;
   padding-right: 1rem;
+  color: white;
 }
 
 @media only screen and (max-width: 765px) {
@@ -51,11 +60,19 @@ header h2 em {
   }
   header {
     height: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+  .headerbox img {
+    margin-right: 1rem;
   }
 }
 
 @media only screen and (min-width: 766px) {
   #mobileheadernav {
+    display: none;
+  }
+  #mobilehidediv {
     display: none;
   }
 }
@@ -67,6 +84,7 @@ header h2 em {
   justify-content: flex-start;
   align-items: center;
   max-width: 100%;
+  color: #001a00;
 }
 
 #jumbobox1 {
@@ -81,13 +99,22 @@ header h2 em {
 
 #jumbotronbtn {
   width: 50%;
-  background-color: darkgrey;
-  color: black;
+  background-color: #001a00;
+  color: white;
   text-align: center;
   display: block;
   line-height: 2rem;
 }
 
+#jumbotronbtn:hover {
+  background-color: #263300;
+}
+
+#jumbotronbtn:active {
+  background-color: #263300;
+ box-shadow: 0 5px #666;
+ transform: translateY(4px);
+}
 
 .jumbotronbox h1 {
   font-size: 2rem;
@@ -128,6 +155,7 @@ header h2 em {
 #moreinfobox {
   display: flex;
   max-width: 100%;
+  color: #001a00;
 }
 
 #moreinfocolumnleft {
@@ -146,10 +174,12 @@ header h2 em {
   font-weight: bold;
   margin-bottom: 1.5rem;
   margin-left: 1.5rem;
+  color: #001a00;
 }
 
 .leftbox p {
   margin-left: 1.5rem;
+  margin-right: 1rem;
 }
 
 .leftbox h2 {
@@ -157,19 +187,29 @@ header h2 em {
   margin-bottom: 1.5rem;
   margin-left: 1.5rem;
   font-weight: bold;
+  color: #001a00;
 }
 
+a:vistied {
+  color: darkblue;
+}
 
 #moreinfocolumnright {
   display: flex;
   flex-direction: column;
   max-width: 26.44rem;
   padding-top: 1rem;
+  color: #001a00;
+  border-left: 1px solid lightgrey;
 }
 
 .rightbox {
   display: flex;
   align-items: center;
+}
+
+.rightbox:hover {
+  background-color: lightgrey;
 }
 
 .imgdiv {
@@ -190,10 +230,13 @@ header h2 em {
 .infotitle {
   font-size: 1.5rem;
   font-weight: bold;
+  color: #001a00;
 }
 
 .rightboxwords a {
   text-decoration: none;
+  color: #001a00;
+  text-decoration: underline;
 }
 
 @media only screen and (max-width:765px) {
@@ -219,7 +262,7 @@ header h2 em {
   }
   .rightboxwords {
     width: 100%;
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
   .nonmobilepic {
     display: none;
@@ -229,6 +272,11 @@ header h2 em {
   }
 }
 
+@media only screen and (min-width: 766px) {
+  .mobilepic {
+    display: none;
+  }
+}
 /*Start Learning*/
 
 #startlearning {
@@ -250,11 +298,18 @@ header h2 em {
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 1rem;
+  color: #001a00;
 }
 
 .boxtile {
   max-width: 30%;
   margin: 1rem;
+}
+
+.boxtile:hover {
+  max-width: 29%;
+  transition-timing-function: ease-in;
+  transition-delay: 200ms;
 }
 
 .tilepic img {
@@ -271,6 +326,7 @@ header h2 em {
   font-size: 1.25rem;
   font-weight: bold;
   padding: 1rem 0rem 0.5rem 1rem;
+  color: #003300;
 }
 
 .tiletext h3 {
@@ -317,12 +373,14 @@ header h2 em {
   }
 }
 /*thesis exhibit*/
-#exhibittitle {
-  font-size: 2rem;
-  font-weight: bold;
-  text-align: center;
-  margin: 2rem auto;
-}
+ #exhibittitle {
+   font-size: 2rem;
+   font-weight: bold;
+   padding: 2rem 1rem;
+   text-align: center;
+   background-color: #001a00;
+   color: white;
+ }
 
 #thesisbox {
   display: flex;
@@ -342,6 +400,7 @@ header h2 em {
   max-height: auto;
   margin-left: 1.5rem;
   margin-right: 1rem;
+  margin-top: 0.5rem;
 }
 
 .boxleftchild h1 {
@@ -359,6 +418,10 @@ header h2 em {
 #thesisboxright {
   display: flex;
   flex-direction: column;
+}
+
+.boxrightchild:hover {
+  background-color: lightgrey;
 }
 
 .boxrightchild {
@@ -411,7 +474,9 @@ header h2 em {
 footer {
   display: flex;
   justify-content: space-between;
-  margin: 1rem 1.5rem 1rem 1.5rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  background-color: #001a00;
+  color: white;
 }
 
 #secondfooterflex {
